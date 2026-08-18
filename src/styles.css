@@ -350,3 +350,8 @@ html.js body.carregado .hero .anima { opacity: 1; transform: translateY(0); }
 .zap-flutuante:hover { background: #0C2A19; transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,0.3); }
 @media (prefers-reduced-motion: reduce) { .zap-flutuante:hover { transform: none; } }
 .zap-flutuante svg { color: #fff; }
+
+/* Cor dos botoes vence a regra generica de link dentro de .site */
+.site a.btn-primario { color: #fff; }
+.site a.btn-secundario { color: var(--cor-marca-escura); }
+.site .rodape a { color: #fff; }
