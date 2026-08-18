@@ -77,15 +77,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Agro Du Cleiton | Agropecuaria e pet shop em Parobe" },
+      { title: "Pet Shop, Racao e Veterinario em Parobe | Agro Du Cleiton" },
       {
         name: "description",
         content:
-          "Racao, remedios, vacinas e atendimento veterinario no bairro Guaruja, em Parobe, RS.",
+          "Racao, remedios, vacinas e atendimento veterinario no bairro Guaruja, em Parobe. A primeira agropecuaria da historia da cidade. Fale no WhatsApp.",
       },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Agro Du Cleiton" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Pet Shop, Racao e Veterinario em Parobe | Agro Du Cleiton" },
+      { name: "twitter:title", content: "Pet Shop, Racao e Veterinario em Parobe | Agro Du Cleiton" },
+      { property: "og:description", content: "Racao, remedios, vacinas e atendimento veterinario no bairro Guaruja, em Parobe. A primeira agropecuaria da historia da cidade. Fale no WhatsApp." },
+      { name: "twitter:description", content: "Racao, remedios, vacinas e atendimento veterinario no bairro Guaruja, em Parobe. A primeira agropecuaria da historia da cidade. Fale no WhatsApp." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d3fe1fed4ebab50732ba3e7bbec9ac2c/id-preview-964c6f8a--87b181fd-8edd-41d4-958d-0445ec499910.lovable.app-1787091831923.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d3fe1fed4ebab50732ba3e7bbec9ac2c/id-preview-964c6f8a--87b181fd-8edd-41d4-958d-0445ec499910.lovable.app-1787091831923.png" },
     ],
     links: [
       {
