@@ -142,3 +142,12 @@
     color: var(--color-foreground);
   }
 }
+
+/* ============================================================
+   AGRO DU CLEITON: landing page (adaptado do template Patas & Cia)
+   Cor de marca definida aqui no :root, nunca por regra solta.
+   ============================================================ */
+:root {
+  --cor-marca: #1F5C39;
+  --cor-marca-escura: #14insert;
+}
