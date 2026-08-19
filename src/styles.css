@@ -251,6 +251,11 @@ html.js body.carregado .hero .anima { opacity: 1; transform: translateY(0); }
   font-size: 1.25rem; font-weight: 700; color: var(--texto); text-decoration: none;
 }
 .marca svg { color: var(--cor-marca); }
+@media (max-width: 420px) {
+  .topo .container { padding-left: 16px; padding-right: 16px; gap: 8px; }
+  .marca { gap: 8px; font-size: 1rem; }
+  .topo .btn { gap: 6px; padding-left: 14px; padding-right: 14px; font-size: 0.9375rem; }
+}
 
 .hero { background: linear-gradient(180deg, var(--fundo-alt), var(--cor-marca-suave)); }
 .hero-grade { display: grid; gap: 32px; align-items: center; }
@@ -308,19 +313,46 @@ html.js body.carregado .hero .anima { opacity: 1; transform: translateY(0); }
 .passo p { color: var(--texto-suave); font-size: 0.9375rem; }
 
 .grade-fotos { display: grid; gap: 20px; margin-top: 32px; }
-@media (min-width: 768px) { .grade-fotos { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 768px) { .grade-fotos { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 .foto-bloco {
-  aspect-ratio: 4 / 3; border-radius: 14px; overflow: hidden;
-  background: linear-gradient(135deg, var(--cor-marca), var(--cor-marca-escura));
-  display: flex; align-items: center; justify-content: center; padding: 20px;
+  aspect-ratio: 1 / 1; min-height: 260px; border-radius: 18px; overflow: hidden;
+  background: linear-gradient(135deg, rgba(26, 98, 60, 0.12), rgba(26, 98, 60, 0.04));
+  border: 1px solid rgba(26, 98, 60, 0.12);
+  display: flex; align-items: center; justify-content: center; padding: 10px;
+  box-shadow: 0 8px 20px rgba(10, 35, 26, 0.06);
 }
-.foto-bloco img { width: 100%; height: 100%; object-fit: cover; border-radius: 10px; }
-.foto-bloco.com-foto { padding: 0; }
+.foto-bloco img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 14px;
+  background: transparent;
+  display: block;
+}
+.foto-bloco.com-foto {
+  padding: 8px;
+  background: #f7f3ea;
+  border-color: rgba(26, 98, 60, 0.18);
+  aspect-ratio: 1 / 1;
+  min-height: 320px;
+}
+.foto-bloco.com-foto:first-child img {
+  transform: scale(0.96);
+  transform-origin: center;
+}
 
 .grade-depoimentos { display: grid; gap: 20px; margin-top: 32px; }
 @media (min-width: 768px) { .grade-depoimentos { grid-template-columns: repeat(3, 1fr); } }
 .depoimento blockquote { color: var(--texto); margin-bottom: 16px; }
 .depoimento .autor { color: var(--texto-suave); font-size: 0.9375rem; font-weight: 500; }
+.imagem-avaliacoes {
+  width: 100%; margin-top: 32px; overflow: hidden; border-radius: 14px;
+  border: 1px solid var(--borda); background: #fff;
+}
+.imagem-avaliacoes img {
+  display: block; width: 100%; height: auto;
+}
 
 .sobre p { max-width: 720px; }
 .sobre p + p { margin-top: 16px; }
