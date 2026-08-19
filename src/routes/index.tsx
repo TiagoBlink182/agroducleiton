@@ -4,7 +4,11 @@ import equipeLocal from "../images/lustracao da equipe da Agro Du Cleiton.jpg";
 import vetLocal from "../images/Cartaz do atendimento veterinario da Agro Du Cleiton com a Dra. Pathia segurando filhotes.jpg";
 import fachadaLocal from "../images/fachada.jpg";
 import equipeLojaLocal from "../images/equipe.jpg";
-import avaliacoesLocal from "../images/avaliacoes.jpg";
+import avaliacao1Local from "../images/avaliacao_1.png";
+import avaliacao2Local from "../images/avaliacao_2.png";
+import avaliacao3Local from "../images/avaliacao_3.png";
+import avaliacao4Local from "../images/avaliacao_4.png";
+import avaliacao5Local from "../images/avaliacao_5.png";
 
 const TITULO =
   "Pet Shop, Ração e Veterinário em Parobé | Agro Du Cleiton";
@@ -59,7 +63,7 @@ const MSG_RACAO =
   ZAP +
   "?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Agro%20Du%20Cleiton%20e%20quero%20saber%20pre%C3%A7o%20e%20disponibilidade%20de%20ra%C3%A7%C3%A3o.";
 const MAPS =
-  "https://www.google.com/maps/search/?api=1&query=Agro+Du+Cleiton+Av.+das+Na%C3%A7%C3%B5es+543+Parob%C3%A9+RS";
+  "https://maps.app.goo.gl/YmMNK31beTtXMR28A";
 
 function IconePata() {
   return (
@@ -184,8 +188,8 @@ function Index() {
               <p>
                 A Agro Du Cleiton foi a primeira agropecuária fundada na história de Parobé. Isso
                 quer dizer atendimento de gente que conhece bicho, conhece a cidade e sabe
-                indicar o que resolve, sem empurrar produto. [PLACEHOLDER: confirmar o ano de
-                fundação e quem fundou]
+                indicar o que resolve, sem empurrar produto. Fundador: Oli Silvio da Silva, loja
+                fundada em 10 de Dezembro de 1980.
               </p>
             </div>
           </div>
@@ -361,14 +365,22 @@ function Index() {
             <h2 className="anima" style={{ "--i": 1 } as React.CSSProperties}>
               O que os clientes dizem
             </h2>
-            <div className="imagem-avaliacoes anima" style={{ "--i": 0 } as React.CSSProperties}>
-              <img
-                src={avaliacoesLocal}
-                alt="Avaliações dos clientes da Agro Du Cleiton"
-                loading="lazy"
-                width={1080}
-                height={180}
-              />
+            <div className="grade-avaliacoes anima" style={{ "--i": 0 } as React.CSSProperties}>
+              <div className="quadro-avaliacao">
+                <img src={avaliacao1Local} alt="Avaliação de cliente da Agro Du Cleiton" loading="lazy" />
+              </div>
+              <div className="quadro-avaliacao">
+                <img src={avaliacao2Local} alt="Avaliação de cliente da Agro Du Cleiton" loading="lazy" />
+              </div>
+              <div className="quadro-avaliacao">
+                <img src={avaliacao3Local} alt="Avaliação de cliente da Agro Du Cleiton" loading="lazy" />
+              </div>
+              <div className="quadro-avaliacao">
+                <img src={avaliacao4Local} alt="Avaliação de cliente da Agro Du Cleiton" loading="lazy" />
+              </div>
+              <div className="quadro-avaliacao">
+                <img src={avaliacao5Local} alt="Avaliação de cliente da Agro Du Cleiton" loading="lazy" />
+              </div>
             </div>
           </div>
         </section>
@@ -385,7 +397,7 @@ function Index() {
               A Agro Du Cleiton foi a primeira agropecuária fundada na história de Parobé e segue
               atendendo no bairro Guarujá, na Av. das Nações, 543. Aqui entra o dono de cachorro,
               o de gato e quem tem criação no fundo do terreno, e todo mundo sai atendido.
-              [PLACEHOLDER: confirmar ano de fundação, fundador e tempo de atuação]
+              Fundador: Oli Silvio da Silva, loja fundada em 10 de Dezembro de 1980.
             </p>
             <p className="anima" style={{ "--i": 3 } as React.CSSProperties}>
               Vender ração e remédio é a parte fácil. O que a gente faz de diferente é ouvir o
@@ -407,7 +419,11 @@ function Index() {
               <div className="card anima" style={{ "--i": 0 } as React.CSSProperties}>
                 <h3>Endereço</h3>
                 <p>Av. das Nações, 543, bairro Guarujá, Parobé, RS</p>
-                <p className="nota">[PLACEHOLDER: ponto de referência perto da loja]</p>
+                <p className="nota">
+                  <a className="maps-link" href={MAPS}>
+                    Ver endereço no Google Maps
+                  </a>
+                </p>
               </div>
               <div className="card anima" style={{ "--i": 1 } as React.CSSProperties}>
                 <h3>Horário</h3>
@@ -416,22 +432,16 @@ function Index() {
                   chegada.
                 </p>
                 <p className="nota">
-                  Horário da loja: [PLACEHOLDER: confirmar dias e horários de funcionamento da
-                  loja]
+                  Horário da loja: de Seg à Sex, das 08h às 12h e das 14h às 19h; sábado, das 08h
+                  às 12h.
                 </p>
               </div>
             </div>
             <div className="acoes-local anima" style={{ "--i": 0 } as React.CSSProperties}>
-              <a className="btn btn-secundario" href={MAPS}>
-                Ver no Google Maps
-              </a>
               <a className="btn btn-primario" href={MSG_VET}>
                 Falar no WhatsApp
               </a>
             </div>
-            <p className="nota anima" style={{ "--i": 1, marginTop: 12 } as React.CSSProperties}>
-              [PLACEHOLDER: trocar o link acima pelo link exato do Google Maps da loja]
-            </p>
           </div>
         </section>
       </main>
@@ -453,12 +463,17 @@ function Index() {
             </div>
             <div className="anima" style={{ "--i": 2 } as React.CSSProperties}>
               <strong>Redes</strong>
-              <p>Instagram: [PLACEHOLDER: @ do Instagram da loja]</p>
+              <p>Instagram: @agroducleiton</p>
             </div>
           </div>
           <p className="legal">
-            Agro Du Cleiton. CNPJ: [PLACEHOLDER: CNPJ]. Todos os direitos reservados,{" "}
+            Agro Du Cleiton. CNPJ: 01.304.882/0001-41. Todos os direitos reservados,{" "}
             {new Date().getFullYear()}.
+          </p>
+          <p className="criador">
+            <a href="https://tiagoblink182.github.io/portfolio/" target="_blank" rel="noreferrer">
+              Criado por Tiago Bresolin 2026
+            </a>
           </p>
         </div>
       </footer>
