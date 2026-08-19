@@ -11,7 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-import favicon from "../images/Cartaz do atendimento veterinario da Agro Du Cleiton com a Dra. Pathia segurando filhotes.jpg";
+import favicon from "../images/lustracao da equipe da Agro Du Cleiton.jpg";
 
 function NotFoundComponent() {
   return (
