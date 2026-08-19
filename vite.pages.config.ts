@@ -5,6 +5,7 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   root: "pages",
+  publicDir: "../public",
   base: "/agro-du-cleiton/",
   plugins: [react(), tailwindcss(), tsconfigPaths()],
   build: {
