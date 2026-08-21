@@ -6,7 +6,7 @@ import { defineConfig } from "vite";
 export default defineConfig({
   root: "pages",
   publicDir: "../public",
-  base: "/agro-du-cleiton/",
+  base: "/",
   plugins: [react(), tailwindcss(), tsconfigPaths()],
   build: {
     outDir: "../dist-pages",

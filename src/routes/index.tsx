@@ -14,6 +14,7 @@ const TITULO =
   "Pet Shop, Ração e Veterinário em Parobé | Agro Du Cleiton";
 const DESCRICAO =
   "Ração, remédios, vacinas e atendimento veterinário no bairro Guarujá, em Parobé. A primeira agropecuária da história da cidade. Fale no WhatsApp.";
+const URL_SITE = "https://agroducleiton.com.br/";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -25,27 +26,55 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: DESCRICAO },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "pt_BR" },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: URL_SITE },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "theme-color", content: "#1E5B38" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: URL_SITE }],
     scripts: [
       {
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "VeterinaryCare",
+          "@type": "LocalBusiness",
           name: "Agro Du Cleiton",
           description: DESCRICAO,
+          url: URL_SITE,
           telephone: "+5551998239640",
+          priceRange: "$$",
+          sameAs: ["https://www.instagram.com/agroducleiton/"],
+          hasMap: "https://maps.app.goo.gl/YmMNK31beTtXMR28A",
+          areaServed: {
+            "@type": "City",
+            name: "Parobé",
+          },
           address: {
             "@type": "PostalAddress",
-            streetAddress: "Av. das Nacoes, 543",
-            addressLocality: "Parobe",
+            streetAddress: "Av. das Nações, 543",
+            addressLocality: "Parobé",
             addressRegion: "RS",
             addressCountry: "BR",
           },
+          openingHoursSpecification: [
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              opens: "08:00",
+              closes: "12:00",
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              opens: "14:00",
+              closes: "19:00",
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: "Saturday",
+              opens: "08:00",
+              closes: "12:00",
+            },
+          ],
         }),
       },
     ],
@@ -152,7 +181,7 @@ function Index() {
                 Agropecuária e pet shop no Guarujá, Parobé
               </p>
               <h1 className="anima" style={{ "--i": 1 } as React.CSSProperties}>
-                A primeira agropecuária da história de Parobé cuida do seu animal até hoje
+                Agropecuária e veterinário em Parobé, no bairro Guarujá
               </h1>
               <p className="apoio anima" style={{ "--i": 2 } as React.CSSProperties}>
                 Ração que não falta na prateleira, remédio certo, vacina na hora e veterinário
