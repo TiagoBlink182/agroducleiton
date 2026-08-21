@@ -10,8 +10,7 @@ import avaliacao3Local from "../images/avaliacao_3.png";
 import avaliacao4Local from "../images/avaliacao_4.png";
 import avaliacao5Local from "../images/avaliacao_5.png";
 
-const TITULO =
-  "Pet Shop, Ração e Veterinário em Parobé | Agro Du Cleiton";
+const TITULO = "Pet Shop, Ração e Veterinário em Parobé | Agro Du Cleiton";
 const DESCRICAO =
   "Ração, remédios, vacinas e atendimento veterinário no bairro Guarujá, em Parobé. A primeira agropecuária da história da cidade. Fale no WhatsApp.";
 const URL_SITE = "https://agroducleiton.com.br/";
@@ -91,12 +90,18 @@ const MSG_VET =
 const MSG_RACAO =
   ZAP +
   "?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Agro%20Du%20Cleiton%20e%20quero%20saber%20pre%C3%A7o%20e%20disponibilidade%20de%20ra%C3%A7%C3%A3o.";
-const MAPS =
-  "https://maps.app.goo.gl/YmMNK31beTtXMR28A";
+const MAPS = "https://maps.app.goo.gl/YmMNK31beTtXMR28A";
 
 function IconePata() {
   return (
-    <svg aria-hidden="true" focusable="false" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      width="28"
+      height="28"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+    >
       <circle cx="7" cy="7.5" r="2.1" />
       <circle cx="12" cy="6" r="2.1" />
       <circle cx="17" cy="7.5" r="2.1" />
@@ -107,7 +112,14 @@ function IconePata() {
 
 function IconeZap({ size = 20 }: { size?: number }) {
   return (
-    <svg aria-hidden="true" focusable="false" width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="currentColor"
+    >
       <path d="M12 3.5c-4.7 0-8.5 3.4-8.5 7.6 0 2.2 1 4.1 2.7 5.5L5.3 20.5l4.2-1.3c.8.2 1.6.3 2.5.3 4.7 0 8.5-3.4 8.5-7.6S16.7 3.5 12 3.5z" />
     </svg>
   );
@@ -129,9 +141,7 @@ function Index() {
       return () => cancelAnimationFrame(raf);
     }
 
-    const alvos = document.querySelectorAll(
-      "main section:not(.hero) .anima, .rodape .anima",
-    );
+    const alvos = document.querySelectorAll("main section:not(.hero) .anima, .rodape .anima");
     if (!("IntersectionObserver" in window)) {
       alvos.forEach((el) => el.classList.add("visivel"));
       return () => cancelAnimationFrame(raf);
@@ -184,9 +194,9 @@ function Index() {
                 Agropecuária e veterinário em Parobé, no bairro Guarujá
               </h1>
               <p className="apoio anima" style={{ "--i": 2 } as React.CSSProperties}>
-                Ração que não falta na prateleira, remédio certo, vacina na hora e veterinário
-                para atender. Você pergunta pelo WhatsApp e já sai de casa sabendo se tem, quanto
-                custa e quando pode buscar. Temos tele entrega em Parobé!
+                Ração que não falta na prateleira, remédio certo, vacina na hora e veterinário para
+                atender. Você pergunta pelo WhatsApp e já sai de casa sabendo se tem, quanto custa e
+                quando pode buscar. Temos tele entrega em Parobé!
               </p>
               <div className="hero-ctas anima" style={{ "--i": 3 } as React.CSSProperties}>
                 <a className="btn btn-primario" href={MSG_GERAL}>
@@ -216,9 +226,9 @@ function Index() {
               <h2>A agropecuária mais antiga da cidade</h2>
               <p>
                 A Agro Du Cleiton foi a primeira agropecuária fundada na história de Parobé. Isso
-                quer dizer atendimento de gente que conhece bicho, conhece a cidade e sabe
-                indicar o que resolve, sem empurrar produto. Fundador: Oli Silvio da Silva, loja
-                fundada em 10 de Dezembro de 1980.
+                quer dizer atendimento de gente que conhece bicho, conhece a cidade e sabe indicar o
+                que resolve, sem empurrar produto. Fundador: Oli Silvio da Silva, loja fundada em 10
+                de Dezembro de 1980.
               </p>
             </div>
           </div>
@@ -239,7 +249,14 @@ function Index() {
             <div className="grade-servicos">
               <article className="card anima" style={{ "--i": 0 } as React.CSSProperties}>
                 <div className="icone">
-                  <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
                     <rect x="5" y="8" width="14" height="11" rx="2" />
                     <path d="M8 8V6h8v2z" />
                   </svg>
@@ -252,7 +269,18 @@ function Index() {
               </article>
               <article className="card anima" style={{ "--i": 1 } as React.CSSProperties}>
                 <div className="icone">
-                  <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
                     <path d="M8.5 15.5l7-7" />
                     <rect x="3" y="10" width="10" height="6" rx="3" transform="rotate(-45 3 10)" />
                   </svg>
@@ -265,20 +293,42 @@ function Index() {
               </article>
               <article className="card anima" style={{ "--i": 2 } as React.CSSProperties}>
                 <div className="icone">
-                  <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
                     <path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z" />
                     <path d="M9 11.5l2 2 4-4" />
                   </svg>
                 </div>
                 <h3>Vacinas</h3>
                 <p>
-                  Vacina aplicada e anotada na carteirinha, com a data da próxima combinada na
-                  hora, para não passar do prazo.
+                  Vacina aplicada e anotada na carteirinha, com a data da próxima combinada na hora,
+                  para não passar do prazo.
                 </p>
               </article>
               <article className="card anima" style={{ "--i": 3 } as React.CSSProperties}>
                 <div className="icone">
-                  <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
                     <path d="M12 20C12 20 4 14.5 4 9.5A4.3 4.3 0 0 1 12 7a4.3 4.3 0 0 1 8 2.5C20 14.5 12 20 12 20z" />
                     <path d="M12 10.5v4M10 12.5h4" />
                   </svg>
@@ -330,7 +380,11 @@ function Index() {
                 <p>Realizamos tele entrega somente na cidade de Parobé.</p>
               </div>
             </div>
-            <a className="btn btn-primario anima" style={{ "--i": 0 } as React.CSSProperties} href={MSG_RACAO}>
+            <a
+              className="btn btn-primario anima"
+              style={{ "--i": 0 } as React.CSSProperties}
+              href={MSG_RACAO}
+            >
               Converse conosco
             </a>
           </div>
@@ -345,7 +399,10 @@ function Index() {
               Conheça a Agro Du Cleiton por dentro
             </h2>
             <div className="grade-fotos">
-              <div className="foto-bloco com-foto anima" style={{ "--i": 0 } as React.CSSProperties}>
+              <div
+                className="foto-bloco com-foto anima"
+                style={{ "--i": 0 } as React.CSSProperties}
+              >
                 <img
                   src={vetLocal}
                   alt="Cartaz do atendimento veterinário da Agro Du Cleiton com a Dra. Páthia segurando filhotes"
@@ -396,19 +453,39 @@ function Index() {
             </h2>
             <div className="grade-avaliacoes anima" style={{ "--i": 0 } as React.CSSProperties}>
               <div className="quadro-avaliacao">
-                <img src={avaliacao1Local} alt="Avaliação de cliente da Agro Du Cleiton" loading="lazy" />
+                <img
+                  src={avaliacao1Local}
+                  alt="Avaliação de cliente da Agro Du Cleiton"
+                  loading="lazy"
+                />
               </div>
               <div className="quadro-avaliacao">
-                <img src={avaliacao2Local} alt="Avaliação de cliente da Agro Du Cleiton" loading="lazy" />
+                <img
+                  src={avaliacao2Local}
+                  alt="Avaliação de cliente da Agro Du Cleiton"
+                  loading="lazy"
+                />
               </div>
               <div className="quadro-avaliacao">
-                <img src={avaliacao3Local} alt="Avaliação de cliente da Agro Du Cleiton" loading="lazy" />
+                <img
+                  src={avaliacao3Local}
+                  alt="Avaliação de cliente da Agro Du Cleiton"
+                  loading="lazy"
+                />
               </div>
               <div className="quadro-avaliacao">
-                <img src={avaliacao4Local} alt="Avaliação de cliente da Agro Du Cleiton" loading="lazy" />
+                <img
+                  src={avaliacao4Local}
+                  alt="Avaliação de cliente da Agro Du Cleiton"
+                  loading="lazy"
+                />
               </div>
               <div className="quadro-avaliacao">
-                <img src={avaliacao5Local} alt="Avaliação de cliente da Agro Du Cleiton" loading="lazy" />
+                <img
+                  src={avaliacao5Local}
+                  alt="Avaliação de cliente da Agro Du Cleiton"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
@@ -424,14 +501,14 @@ function Index() {
             </h2>
             <p className="anima" style={{ "--i": 2 } as React.CSSProperties}>
               A Agro Du Cleiton foi a primeira agropecuária fundada na história de Parobé e segue
-              atendendo no bairro Guarujá, na Av. das Nações, 543. Aqui entra o dono de cachorro,
-              o de gato e quem tem criação no fundo do terreno, e todo mundo sai atendido.
-              Fundador: Oli Silvio da Silva, loja fundada em 10 de Dezembro de 1980.
+              atendendo no bairro Guarujá, na Av. das Nações, 543. Aqui entra o dono de cachorro, o
+              de gato e quem tem criação no fundo do terreno, e todo mundo sai atendido. Fundador:
+              Oli Silvio da Silva, loja fundada em 10 de Dezembro de 1980.
             </p>
             <p className="anima" style={{ "--i": 3 } as React.CSSProperties}>
-              Vender ração e remédio é a parte fácil. O que a gente faz de diferente é ouvir o
-              caso do seu animal, indicar só o que precisa e chamar a veterinária quando o assunto
-              é de consulta. Chame no WhatsApp e veja a diferença.
+              Vender ração e remédio é a parte fácil. O que a gente faz de diferente é ouvir o caso
+              do seu animal, indicar só o que precisa e chamar a veterinária quando o assunto é de
+              consulta. Chame no WhatsApp e veja a diferença.
             </p>
           </div>
         </section>
@@ -457,12 +534,11 @@ function Index() {
               <div className="card anima" style={{ "--i": 1 } as React.CSSProperties}>
                 <h3>Horário</h3>
                 <p>
-                  Atendimento veterinário: terças e quintas, das 14h às 18h30, por ordem de
-                  chegada.
+                  Atendimento veterinário: terças e quintas, das 14h às 18h30, por ordem de chegada.
                 </p>
                 <p className="nota">
-                  Horário da loja: de Seg à Sex, das 08h às 12h e das 14h às 19h; sábado, das 08h
-                  às 12h.
+                  Horário da loja: de Seg à Sex, das 08h às 12h e das 14h às 19h; sábado, das 08h às
+                  12h.
                 </p>
               </div>
             </div>
@@ -507,7 +583,11 @@ function Index() {
         </div>
       </footer>
 
-      <a className="zap-flutuante" href={MSG_GERAL} aria-label="Chamar a Agro Du Cleiton no WhatsApp">
+      <a
+        className="zap-flutuante"
+        href={MSG_GERAL}
+        aria-label="Chamar a Agro Du Cleiton no WhatsApp"
+      >
         <IconeZap size={28} />
       </a>
     </div>
